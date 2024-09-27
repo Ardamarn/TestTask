@@ -21,16 +21,22 @@ class Group {
     console.log(this.arr);
   };
 
+  delTodo(n) {
+    // const deleteN = arrTodos.splice(n, 1);
+    delete this.arr[n];
+    console.log(this.arr);
+    this.render();
+  };
+
   render() {
     const todosCont = document.getElementById(this.todos);
-    const del = 
     todosCont.innerHTML = "";
     const template = (title, n) => `
           <div>
               <p>Номер ${n}</p>
               <p>${title}</p>
               <button onclick = "${n}">Выполнено</button>
-              <button onclick = "${n}">Удалить</button>
+              <button onclick = "myTodos.delTodo(${n})">Удалить</button>
           </div>`;
     /*без {} и без return тк в одну строку*/
     const items = this.arr.map((obj) => template(obj.value, obj.number));
