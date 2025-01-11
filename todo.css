@@ -1,3 +1,16 @@
-.input{
-    
+.body {
+  background-color: rgb(225, 229, 231);
+  background-image: url("seal.png");
+  background-size:30%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  width: 80%;
+  max-width: 200px;
+
 }
+/* 
+.main {
+  display: inline-block;
+  border: none;
+} */

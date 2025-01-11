@@ -12,40 +12,15 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
-    <div>
-        <h1>Дела</h1>
-        <label for="name">Введите задачу</label>
-        <div>
-            <input type="text" id="inpMy">
-        </div>
-        <button onclick="myTodos.result()">готово</button>
-        <div id="todosMy">
-        </div>
+<body class="container text-center body">
+    <button onclick="renderTodo('дела', 'myTodos', 'inpMy', 'todosMy')">Дела</button>
+    <button onclick="renderTodo('работа', 'workTodos', 'inpWork', 'todosWork')">Работа</button>
+    <button onclick="renderTodo('хотелки', 'wishTodos', 'inpWish', 'todosWish')">Хотелки</button>
+
+    <div class="row" id="area">
     </div>
 
-    <div>
-        <h1>Работа</h1>
-        <label for="name">Введите задачу</label>
-        <div>
-            <input type="text" id="inpWork">
-        </div>
-        <button onclick="workTodos.result()">готово</button>
-        <div id="todosWork">
-        </div>
     </div>
-
-    <div>
-        <h1>Хотелки</h1>
-        <label for="name">Введите задачу</label>
-        <div>
-            <input type="text" id="inpWish">
-        </div>
-        <button onclick="wishTodos.result()">готово</button>
-        <div id="todosWish">
-        </div>
-    </div>
-
     <script src="todo1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -53,3 +28,5 @@
 </body>
 
 </html>
+
+<!-- container text-center  -->
